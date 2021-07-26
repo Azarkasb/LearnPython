@@ -1,2 +1,0 @@
-Make a program that gets an integer and make (Triangle + Diamond + Khayam_Pascal Triangle)
-
