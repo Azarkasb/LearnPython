@@ -18,7 +18,7 @@ def rgcd(x, y):
         return(y, x%y)
     else :
         return(y%x, x)
-    
+
 #Addition
 def addition(x, y):
     for i in range(y):
@@ -41,20 +41,20 @@ def rmultiplication(x, y):
     if not(y) :
         return 0
     return x + rmultiplication(x, y - 1)
-        
-######################## # # # # main
-a = int(input('Enter the first number : '))
-b = int(input('Enter the second number : '))
-ngcd = gcd(a, b)
-print(f'gcd ({a} and {b}) = {ngcd}')
-nrgcd = rgcd(a, b)
-print(f'rgcd ({a} and {b}) = {ngcd}')
-naddition = addition(a, b)
-print(f'addition ({a} and {b}) = {naddition}')
-nraddition = raddition(a, b)
-print(f'raddition ({a} and {b}) = {nraddition}')
-nmultiplication = multiplication(a, b)
-print(f'multiplication ({a} and {b}) = {nmultiplication}')
-nrmultiplication = rmultiplication(a, b)
-print(f'rmultiplication ({a} and {b}) = {nrmultiplication}')
 
+######################## # # # # main
+if __name__ == "__main__":
+    a = int(input('Enter the first number : '))
+    b = int(input('Enter the second number : '))
+    ngcd = gcd(a, b)
+    print(f'gcd ({a} and {b}) = {ngcd}')
+    nrgcd = rgcd(a, b)
+    print(f'rgcd ({a} and {b}) = {ngcd}')
+    naddition = addition(a, b)
+    print(f'addition ({a} and {b}) = {naddition}')
+    nraddition = raddition(a, b)
+    print(f'raddition ({a} and {b}) = {nraddition}')
+    nmultiplication = multiplication(a, b)
+    print(f'multiplication ({a} and {b}) = {nmultiplication}')
+    nrmultiplication = rmultiplication(a, b)
+    print(f'rmultiplication ({a} and {b}) = {nrmultiplication}')
