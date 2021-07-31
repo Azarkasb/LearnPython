@@ -12,7 +12,7 @@ class Fraction:
         return f'{self.numerator}/{self.denominator}'
     def __str__(self):
         return f'{self.numerator}/{self.denominator}'
-    
+
     @property
     def numerator(self):
         return self.__numerator
@@ -41,13 +41,13 @@ class Fraction:
 
     def __eq__(self, other):
         return (self.numerator == other.numerator) and (self.denominator == other.denominator)
-    def __le__(self, other):       
+    def __le__(self, other):
         return  (self.numerator * other.denominator <= self.denominator * other.numerator)
-    def __lt__(self, other):       
+    def __lt__(self, other):
         return  (self.numerator * other.denominator < self.denominator * other.numerator)
-    def __ge__(self, other):       
+    def __ge__(self, other):
         return  (self.numerator * other.denominator >= self.denominator * other.numerator)
-    def __gt__(self, other):       
+    def __gt__(self, other):
         return  (self.numerator * other.denominator > self.denominator * other.numerator)
     def __abs__(self):
         return Fraction(abs(self.numerator), self.denomerator)
@@ -64,4 +64,3 @@ class Fraction:
 n1 = Fraction(1, 2)
 n2 = Fraction(6, 8)
 n3 = Fraction(9, -6)
-    
