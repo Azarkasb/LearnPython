@@ -1,6 +1,5 @@
 - Technology Q of Quera (Sample Code to GitHub)
 - W3Schools Python
-- Python Course Quera
 Hmm
-_UnitTest library
+
 _Real Project Components
