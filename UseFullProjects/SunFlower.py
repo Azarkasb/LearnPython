@@ -1,16 +1,16 @@
 '''Barname baraye namayesh dadan rabete gol aftab gardan ba seri  fibonacci 
 baraye Fahm behtar in rabete be https://www.youtube.com/watch?v=_GkxCIW46to sar bezanid'''
 
-#sunflower
-#AZ
+# sunflower
+# AZ
 import turtle as t
 pen = t.Turtle()
 
-#settings
+# settings
 pen.speed(0)
 pen.pensize(3)
 
-#draw13
+# draw13
 n = 13
 t = 2
 pen.color('blue')
@@ -25,9 +25,9 @@ for i in range(n):
     pen.right(angle + anglePlus)
 
 
-#draw21
+# draw21
 n = 21
-t = 4 
+t = 4
 pen.color('red')
 pen.speed(0)
 angle = 120
@@ -43,7 +43,7 @@ for i in range(n):
     pen.pendown()
     pen.right(angle + anglePlus)
 
-#draw34
+# draw34
 n = 34
 t = 5
 pen.color('green')
@@ -61,7 +61,7 @@ for i in range(n):
     pen.pendown()
     pen.right(angle + anglePlus)
 
-#draw55
+# draw55
 n = 55
 t = 10
 pen.color('purple')

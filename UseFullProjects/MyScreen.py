@@ -2,15 +2,17 @@
 Ye Eshkal Fni Hst To In Brname Onam Ine Ke Tooye Manitor Haye Ghadimi Vaghti Safhe Bedoon Harkat Roshn Mimoon Baraye Modat Tolani Kharab Mishod In Barname Screen Saver Rng ro Tooye Hmeye Noghat Sfhe Tghiir Mide
 Va Baes Mishe Safhe Namayesh Salem Bmoone Vli Tooye In Barname Faghat Ye Ghesmat Az Safhe Rangesh Avaz Mishe'''
 
-#Myscreen
+# Myscreen
 import math as m
 import turtle as t
 typeWriter = t.Turtle()
 
-#BackGround
+# BackGround
 t.bgcolor('black')
 
-#TypeWriterSettings
+# TypeWriterSettings
+
+
 def TypeWriterSet(color):
     typeWriter.goto(-200, -100)
     typeWriter.color(color)
@@ -18,10 +20,10 @@ def TypeWriterSet(color):
     typeWriter.pensize(10)
 
 
-#Draw_AZ
+# Draw_AZ
 def drawAz():
     typeWriter.pendown()
-    #Draw_A
+    # Draw_A
     typeWriter.left(60)
     typeWriter.fd(300)
     typeWriter.left(180 + 60)
@@ -35,7 +37,7 @@ def drawAz():
     typeWriter.penup()
     typeWriter.fd(99)
     typeWriter.pendown()
-    #Draw_Z
+    # Draw_Z
     typeWriter.fd(75)
     typeWriter.left(180 + 60)
     typeWriter.fd(150)
@@ -43,10 +45,11 @@ def drawAz():
     typeWriter.fd(75)
     typeWriter.penup()
 
+
 while(True):
     TypeWriterSet('white')
     drawAz()
-    
+
     TypeWriterSet('red')
     drawAz()
 
