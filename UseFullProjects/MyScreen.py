@@ -1,6 +1,9 @@
 '''Ye barname baraye screen saver
-Ye Eshkal Fni Hst To In Brname Onam Ine Ke Tooye Manitor Haye Ghadimi Vaghti Safhe Bedoon Harkat Roshn Mimoon Baraye Modat Tolani Kharab Mishod In Barname Screen Saver Rng ro Tooye Hmeye Noghat Sfhe Tghiir Mide
-Va Baes Mishe Safhe Namayesh Salem Bmoone Vli Tooye In Barname Faghat Ye Ghesmat Az Safhe Rangesh Avaz Mishe'''
+Ye Eshkal Fni Hst To In Brname Onam Ine Ke Tooye Manitor Haye Ghadimi Vaghti
+Safhe Bedoon Harkat Roshn Mimoon Baraye Modat Tolani Kharab Mishod In Barname
+ Screen Saver Rng ro Tooye Hmeye Noghat Sfhe Tghiir Mide
+Va Baes Mishe Safhe Namayesh Salem Bmoone Vli Tooye In Barname
+Faghat Ye Ghesmat Az Safhe Rangesh Avaz Mishe'''
 
 # Myscreen
 import math as m
