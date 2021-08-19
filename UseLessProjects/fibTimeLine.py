@@ -4,15 +4,17 @@ mokhtalef
 install matplotlib
 
 '''
-#AZ
+# AZ
 import matplotlib.pyplot as plt
 import datetime as dt
 import time as time
+
 
 def fib(n):
     if n == 1 or n == 2:
         return 1
     return fib(n - 2) + fib(n - 1)
+
 
 timeLine = []
 ttimeLine = []

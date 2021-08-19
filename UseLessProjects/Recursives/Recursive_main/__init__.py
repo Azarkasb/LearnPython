@@ -1,48 +1,56 @@
 '''Tabe (be mim mim) , (jam) va (zarb) be do ravesh adi va bazgashti'''
 
 
-#GCD
+# GCD
 def gcd(x, y):
     c = 0
     while y:
-        c = x%y
+        c = x % y
         x = y
         y = c
     return x
 
+
 def rgcd(x, y):
-##    return (x) if x == y else (return (rgcd(x, x%y))) if x > y else return (rgcd(x, y%x))
+    # return (x) if x == y else (return (rgcd(x, x%y))) if x > y else return (rgcd(x, y%x))
     if x == y:
         return x
     elif x > y:
-        return(y, x%y)
-    else :
-        return(y%x, x)
+        return(y, x % y)
+    else:
+        return(y % x, x)
 
-#Addition
+# Addition
+
+
 def addition(x, y):
     for i in range(y):
         x += 1
     return x
+
 
 def raddition(x, y):
     if not(y):
         return x
     return raddition(x + 1, y - 1)
 
-#multipication
+# multipication
+
+
 def multiplication(x, y):
-    z = 0;
+    z = 0
     for i in range(y):
         z += x
     return z
 
+
 def rmultiplication(x, y):
-    if not(y) :
+    if not(y):
         return 0
     return x + rmultiplication(x, y - 1)
 
-######################## # # # # main
+
+# main
 if __name__ == "__main__":
     a = int(input('Enter the first number : '))
     b = int(input('Enter the second number : '))

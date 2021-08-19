@@ -1,7 +1,7 @@
 """
 Barname baraye shomaresh kalamat gheir tekrari dar matn
 """
-#AZ
+# AZ
 
 farhang = '''
 Farhang Holakouee (Persian: فرهنگ هلاکوئي born 1 September 1944) is an Iranian psychologist, sociologist
@@ -13,16 +13,12 @@ and currently by Radio Hamrah[2]-offers relationship advice to callers in Persia
 print()
 print(farhang)
 
-dic = {91 : None, 93 : None, 40 : None, 41 : None, 46 : None, 58 : None, 59 : None, 44 : None, 48 : None, 49 : None, 50 : None,\
-51 : None, 52 : None, 53 : None, 54 : None, 55 : None, 56 : None, 57 : None, 45 : None}
+dic = {91: None, 93: None, 40: None, 41: None, 46: None, 58: None, 59: None, 44: None, 48: None, 49: None, 50: None,
+       51: None, 52: None, 53: None, 54: None, 55: None, 56: None, 57: None, 45: None}
 fList = (farhang.translate(dic)).split()
-#print(fList)
+# print(fList)
 print()
 fSet = set(fList)
-#print(fSet)
+# print(fSet)
 print()
-print(len(fSet), ' Word found in the text') 
-
-
-
-
+print(len(fSet), ' Word found in the text')

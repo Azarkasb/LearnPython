@@ -1,15 +1,15 @@
 '''
 Barname baraye chap mosalas, lozi, mosalasKhayam_paskal motanaseb ba n vorodi
 '''
-#All in one
-#AZ
+# All in one
+# AZ
 n = int(input('Enter an integer : '))
 
-#1
+# 1
 for i in range(n - 1, -1, -1):
     print(' ' * i + '*' * (n - i))
 
-#2
+# 2
 print('next'.center(120, '.'))
 np = n//2
 for i in range(0, np + 1):
@@ -20,41 +20,20 @@ for i in range(1, np + 1):
 
 print('next'.center(120, '.'))
 
-#3
+# 3
 n += 1
-l = [0,1,0]
+ls = [0, 1, 0]
 s = ''
 x = 0
 for i in range(1, n):
-    #print
-    for j in l[1:-1]:
+    # print
+    for j in ls[1:-1]:
         s += str(j) + ' '
     print(s.center(4 * n))
     s = ''
-    #next
+    # next
     for k in range(i + 1):
-        x = l.pop()
-        l.insert(0, (x + l[-1]))
-    else :
-        l.insert(0, 0)
-
-    
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
+        x = ls.pop()
+        ls.insert(0, (x + ls[-1]))
+    else:
+        ls.insert(0, 0)
