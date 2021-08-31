@@ -44,6 +44,9 @@ class Fraction:
             self.numerator //= gcd
             self.denominator //= gcd
 
+    def __call__(self):
+        print('inferno, baby Im the reason why bads so fun, hells so hot oh so')
+
     def __eq__(self, other):
         return (self.numerator == other.numerator) and (self.denominator == other.denominator)
 
@@ -63,7 +66,10 @@ class Fraction:
         return Fraction(abs(self.numerator), self.denomerator)
 
     def __add__(self, other):
-        return Fraction(self.numerator * other.denominator + self.denominator * other.numerator, other.denominator * self.denominator)
+        firstButterfly = self.numerator * other.denominator
+        secondButterfly = self.denominator * other.numerator
+        commonDenominator = other.denominator * self.denominator
+        return Fraction(firstButterfly + secondButterfly, commonDenominator)
 
     def __sub__(self, other):
         _other = Fraction(-1 * other.numerator, other.denominator)
@@ -72,10 +78,17 @@ class Fraction:
     def __mul__(self, other):
         return Fraction(self.numerator * other.numerator, self.denominator * other.denominator)
 
+    def __truediv__(self, other):
+        return Fraction(self.numerator * other.denominator, self.denominator * other.numerator)
 
+    def __invert__(self):
+        return Fraction(-1 * self.numerator, self.denominator)
 # def __mod__(self, other):
 # return Fraction(self.numerator * other.denominator, self.denominator * other.numerator)
 #################################
+
+
 n1 = Fraction(1, 2)
 n2 = Fraction(6, 8)
 n3 = Fraction(9, -6)
+n1()
